@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: pipeline-update-1-sept13
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: pipeline-update-1-sept13 
+  name: pipeline-update-1-sept13
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
